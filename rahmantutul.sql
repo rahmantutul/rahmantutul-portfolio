@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 08, 2025 at 09:59 AM
+-- Generation Time: Jun 24, 2025 at 04:30 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `zelio`
+-- Database: `rahmantutul`
 --
 
 -- --------------------------------------------------------
@@ -1496,7 +1496,7 @@ CREATE TABLE `request_logs` (
 --
 
 INSERT INTO `request_logs` (`id`, `status_code`, `url`, `count`, `user_id`, `referrer`, `created_at`, `updated_at`) VALUES
-(5, 404, 'http://127.0.0.1:8000/themes/zelio/images/template/down.svg', 3, NULL, NULL, '2025-02-10 10:54:36', '2025-02-10 10:56:10');
+(6, 404, 'http://127.0.0.1:8000/themes/zelio/images/template/down.svg', 1, NULL, NULL, '2025-06-24 00:54:49', '2025-06-24 00:54:49');
 
 -- --------------------------------------------------------
 
@@ -2566,7 +2566,7 @@ ALTER TABLE `posts`
 -- AUTO_INCREMENT for table `request_logs`
 --
 ALTER TABLE `request_logs`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `revisions`
