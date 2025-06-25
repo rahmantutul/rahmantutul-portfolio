@@ -3,9 +3,6 @@
 /public/storage
 /storage/*.key
 /vendor
-.DS_Store
-Thumbs.db
-/bower_components
 .env
 .env.backup
 /.idea
@@ -19,24 +16,31 @@ sftp-config.json
 _ide_helper_models.php
 /storage/app/backup
 /storage/cache_keys.json
-
 __MACOSX
 /.phpintel
 /.php_cs.cache
+- public/vendor/core
++ /public/vendor  # Still ignore compiled vendor stuff if not needed
 
-public/vendor/core
+- public/mix-manifest.json
++ # Allow mix-manifest to be committed
++ !public/mix-manifest.json
 
-_ide_helper.php
-yarn.lock
-bun.lockb
-/.sass-cache
+- public/themes
++ /public/themes
+# Allow built theme assets to be tracked
+!public/themes/zelio/css/**
+!public/themes/zelio/js/**
+!public/themes/zelio/mix-manifest.json
 
-public/mix-manifest.json
+# But continue ignoring everything else under public/themes
+/public/themes/*
+!public/themes/zelio/
 
-public/themes
-public/docs
+- public/docs
++ /public/docs
+
 resources/docs
-
 .phpunit.result.cache
 /storage/.license
 /storage/fonts
