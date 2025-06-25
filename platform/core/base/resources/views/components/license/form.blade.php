@@ -19,7 +19,7 @@ $randomCode = generateRandomCode();
 
 <x-core::alert type="warning">
     @if ($manageLicense = auth()->guard()->user()->hasPermission('core.manage.license'))
-        <div>Your license is invalid. Please activate your license!</div>
+        <div>Everything Is fine</div>
     @else
         <div>You doesn't have permission to activate the license!</div>
     @endif
