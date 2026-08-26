@@ -11,7 +11,7 @@
                         <i class="ri-menu-2-line"></i>
                     </a>
                 @endif
-                <div class="container py-3 px-4">
+                <div class="container py-3 px-2">
                     <a class="navbar-brand d-flex main-logo align-items-center" href="{{ BaseHelper::getHomepageUrl() }}">
                         {{ Theme::getLogoImage(maxHeight: 40) }}
                         @if ($siteName = theme_option('site_name'))

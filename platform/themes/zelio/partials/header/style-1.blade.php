@@ -9,7 +9,7 @@
                 <i class="ri-menu-2-line"></i>
             </a>
         @endif
-        <div class="container py-3 px-0">
+        <div class="container py-3 px-2">
             <a class="navbar-brand d-flex main-logo align-items-center ms-lg-0 ms-md-5 ms-3" href="{{ BaseHelper::getHomepageUrl() }}">
                 {{ Theme::getLogoImage(maxHeight: 40) }}
                 @if ($siteName = theme_option('site_name'))
